@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+body {
+    background-color: rgb(221, 212, 212);
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    display: block;
+    width: 420px;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+button {
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.like {
+    color: green;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: none;
+}
+
+.like img {
+    height: 30px;
+    margin-left: 12px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+.dislike {
+    color: red;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: none;
+}
+
+.dislike img {
+    height: 20px;
+    margin-left: 12px;
+}
