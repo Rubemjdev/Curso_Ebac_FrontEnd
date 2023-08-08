@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+body {
+    background-color: #add8e6;
+}
+
+body img {
+    width: 100%;
+}
+
+h1 {
+    background-color: rgb(30, 30, 143);
+    text-align: center;
+    color: #fff;
+    padding: 0 8px;
+}
+
+table {
+    max-width: 800px;
+    text-align: center;
+    padding: 16px;
+}
+
+caption {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 24px;
+}
+
+form {
+    max-width: 50%;
+    padding: 16px;
+}
+
+.form-check-label, .form-check-input {
+    margin-top: 16px;
+}
+
+button {
+    margin-top: 16px;
+    padding: 16px;
+}
