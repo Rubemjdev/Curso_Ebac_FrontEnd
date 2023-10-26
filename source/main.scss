@@ -1,0 +1,90 @@
+@use '../config/reset.scss';
+@use '../secoes/produtos.scss';
+@use 'sass:math';
+
+@function pixelParaEm($medidaAlvo, $medidaEmPixel:16px) {
+    @return math.div($medidaAlvo, $medidaEmPixel)+em;
+}
+
+@mixin elementoWidth() {
+    width: 100%;
+}
+
+$corDosBotoes: #44bd32;
+$corPrincipal: #f5f6fa;
+$corDoHeader: #182C61;
+
+body {
+    background-color: $corPrincipal;
+}
+
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    @include elementoWidth();
+    margin: 0 auto;
+}
+
+header {
+    background-color: $corDoHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+
+    &:li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+
+    &:li a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+section {
+    padding: 56px 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    h2 {
+        font-size: pixelParaEm(29px);
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
+
+
+
